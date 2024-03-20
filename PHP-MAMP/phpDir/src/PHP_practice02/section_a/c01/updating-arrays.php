@@ -4,6 +4,9 @@
   Write you php code here
 
    */
+$nutrition = ["fat" => 50];
+$nutrition["fat"] = 20;
+  
 
 ?>
 <!DOCTYPE html>
@@ -17,6 +20,7 @@
 <body>
   <h1>The Candy Store</h1>
   <h2>Nutrition (per 100g)</h2>
+  <p>Nutrition per 100g contains <?php echo $nutrition[0] ?></p>
 
 </body>
 

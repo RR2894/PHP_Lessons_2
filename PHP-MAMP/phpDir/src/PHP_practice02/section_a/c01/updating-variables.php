@@ -5,6 +5,10 @@
 
    */
 
+  $candyName = "Chocolate candy";
+  $candyName = "Pinapple candy";
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -16,7 +20,9 @@
 
 <body>
   <h1>The Candy Store</h1>
+  <p>Welcome to <?php echo $candyName?>store</p>
 
+  
 </body>
 
 </html>

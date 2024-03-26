@@ -1,7 +1,11 @@
 <?php
 /*
+Create a simple if else statement to check if candy is in stock or not. If candy is not in stock, then print the message “Sold Out”; if it is available in stock, print the message “In Stock.”Recap Practice / Classroom Coding
+
 Write your code here
 */
+$candyInStock = 50;
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,9 +18,16 @@ Write your code here
 <body>
   <h1>The Candy Store</h1>
   <h2>Chocolate</h2>
-  <?php
+
+  <?
   /* Write your code here */
-  ?>
-</body>
+
+  if ($candyInStock >= 51):
+    echo "There's enough candy";
+    elseif($candyInStock <= 50):
+      echo "Sold out";
+      endif; 
+      ?>
+      </body>
 
 </html>

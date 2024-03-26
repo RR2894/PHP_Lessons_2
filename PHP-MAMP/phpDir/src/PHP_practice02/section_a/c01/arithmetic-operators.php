@@ -33,7 +33,7 @@
 <body>
   <h1>The Candy Store</h1>
   <h2>Shopping Cart</h2>
-  <p>Your total is $<?= $finalPrice;?></p>
+  <p>Your total is $<?=$finalPrice;?></p>
 
 </body>
 

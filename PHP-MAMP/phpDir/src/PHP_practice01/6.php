@@ -22,8 +22,11 @@
 
 		/*  Step1: Make a form that submits one value to POST super global
 
- */
-  
+    */
+
+    $name = 'Randolph';
+
+    $name =$_POST[$name] ?? false; 
 
 		?>
 

@@ -1,5 +1,9 @@
 <?php
-/* Write your code here */
+
+/* 
+Create a simple for loop to find the prices of multiple candy packs. Let us assume one pack of candy costs $1.99. How much did ten packs cost? Display each pack's costs on the web page. 
+
+Write your code here */
 ?>
 <!DOCTYPE html>
 <html>

@@ -19,9 +19,9 @@
   <h1>The Candy Store</h1>
   <h2>Best Sellers</h2>
   <p>Our top 3 best sellers are 
-    <?php echo '<li>' . $best_sellers[0]?></p>
-    <?php echo '<li>' . $best_sellers[1]?></p>
-    <?php echo '<li>' . $best_sellers[2]?></p>
+    <? foreach ($best_sellers as $best) {
+      echo '<li>' . $best . '<br>';
+    }?>
 </body>
 
 </html>

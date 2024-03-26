@@ -23,9 +23,10 @@
 </head><body>
   <h1>The Candy Store</h1>
   <h2>Offers</h2>
-  <p><?php echo $offers[0][0] . ": Price: $" . $offers[0][1] . " In stock: " . $offers [0][2] ?></p>
-  <p><?php echo $offers[1][0] . ": Price: $" . $offers[1][1] . " In stock: " . $offers [1][2] ?></p>
-  <p><?php echo $offers[2][0] . ": Price: $" . $offers[2][1] . " In stock: " . $offers [2][2] ?></p>
+  <p><?php foreach ($offers as $offer) {
+    echo "Product: " . $offer[0] . ", Quantity: " . $offer[1] . ", Price: $" . $offer[2] . "<br>" . "<br>";
+    }?>
 </body>
 
 </html>
+

@@ -40,14 +40,7 @@ Create a folder e.g. “calculator” inside phpDir of src of PHP-MAMP
     
     
     <?php
-    // Check if the form has been submitted
-    // if (isset($_POST['calculate'])) {
-        //      Retrieve form data
-        //     $num1 = $_POST['number1'];
-        //     $num2 = $_POST['number2'];
-        //     $operation = $_POST['operation'];
-        // }
-        
+    
         $num1 = $_POST['number1'] ?? '';
         $num2 = $_POST['number2'] ?? '';
         $operation = $_POST['operation'] ?? '';

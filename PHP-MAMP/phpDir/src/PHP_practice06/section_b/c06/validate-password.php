@@ -1,6 +1,12 @@
 <?php
 /* Write PHP code here 
 
+Write PHP code to validate password and also check password strength. 
+
+Following conditions should be checked-Password length must contain >=8 characters-Check if it contains combination of uppercase characters, lowercase characters-And numbers       
+
+Display “Password is valid” once above conditions are fulfilled else display “Password not strong enough”
+
 Step 1: Initialize two variables for password and message.
 
 Step 2: Write a custom function to check password rules
@@ -25,7 +31,23 @@ Step 7: Message can be for example "Password is valid" or if not string
 "Password is not strong enough."
 
 */
-?>
+
+$password = '';
+$message = 'Password is too short, minimun is';
+$min = 8;
+
+function is_valid ($password, $min){
+    $len = strlen($min);
+    if($len < $min){
+        return "$message" . "$min";
+    }
+    return TRUE;
+
+
+
+
+}?>
+
 <?php include 'includes/header.php'; ?>
 
 /* Write PHP code here */

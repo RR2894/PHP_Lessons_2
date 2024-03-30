@@ -23,18 +23,23 @@
 
 		Step 5: Instantiate the class / create object and call it pitbull
 
-Step 6: Call the method ShowAll
-
-	
-
+    Step 6: Call the method ShowAll
 		
 	*/
 
+  class Dog {
+      public $name = "Blue";
+      public $fur = "Black";
+      public $eye = "blue";
+  
+      function displayProperties () {
+          echo "Dog's name is " . $this -> name . "<br>";
+          echo "Its fur is" . $this -> fur . "<br>";
+          echo "Its eyes are" . $this -> eye . ", hence the  name" . "<br>";
+    }
+  } 
+
 		?>
-
-
-
-
 
   </article>
   <!--MAIN CONTENT-->

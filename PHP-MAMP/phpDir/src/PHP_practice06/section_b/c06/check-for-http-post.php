@@ -2,6 +2,9 @@
 
 <?php
 /* Write PHP Code here  
+
+Write a PHP code for checking wether a form has been submitted. You can use $_SERVER superglobal array for specific REQUEST_METHOD which stores the HTTP method used to request the page. Whatever user inserts in input box should be displayed e.g. "You searched for ..." (replace ... with term user searched for)
+
 Overall idea here is to check if a form has been submitted
 
 
@@ -14,9 +17,19 @@ and a message should be displayed like this:
 
 Step 3: Otherwise, simply display the form
 
-
-
 */
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $term = $_POST['term'];
+    echo 'You searched for ' . htmlspecialchars($term);
+} else {
+    ?>
+    <form action="check-for-http-post.php" method="POST">
+        Search for: <input type="search" name="term">
+        <input type="submit" value="search">
+    </form>
+    <?php include 'includes/footer.php';
+}
 ?>
 
 <?php include 'includes/footer.php'; ?>

@@ -18,9 +18,22 @@ Step 5: Check if condition is valid, if it is you can display
     "Age is valid" else "You must be 16-65 years old"
 
 */
+
+$age = "";
+$number = "";
+
+// function is_number($number)
+
+$minAge = 16;
+$maxAge = 65;
+
+
+
 ?>
 <?php include 'includes/header.php'; ?>
 
-//Write PHP Code here
+<!-- Write PHP Code here -->
+
+
 
 <?php include 'includes/footer.php'; ?>

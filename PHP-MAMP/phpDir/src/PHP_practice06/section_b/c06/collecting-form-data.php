@@ -1,13 +1,14 @@
 <?php include 'includes/header.php'; ?>
 
 <?php
+// Fix this PHP form to collect form data and display in the page below. 
 //Step 1: Fix the form
 //Hints: How the data is collected using form?
 //What attributes of the form that are necessary?
 //After fixing this form, simply run it few times to check how this works
 ?>
 
-<form>
+<form method>
   <p>Name: <input type="text" name="name"></p>
   <p>Age: <input type="text" name="age"></p>
   <p>Email: <input type="text" name="email"></p>
@@ -17,7 +18,8 @@
     <select name="preferences">
       <option value="email">Email</option>
       <option value="phone">Phone</option>
-    </select></p>
+    </select>
+  </p>
   <p>Rating:
     1 <input type="radio" name="rating" value="1">
     2 <input type="radio" name="rating" value="2">
@@ -27,6 +29,6 @@
   <p><input type="submit" value="Save"></p>
 </form>
 
-<pre><?php var_dump($_POST); ?></pre>
+<pre><?php $_POST; ?></pre>
 
 <?php include 'includes/footer.php'; ?>

@@ -14,9 +14,23 @@ If it is, the form should be then sent via HTTP GET and the search term is displ
   "You searched for ..."  (replace ... with term user searched for)
 
 Step 3: Otherwise, simply display the form
-
-
 */
-?>
+
+// Step 1
+$sent = $_GET['sent'] ?? "";
+
+// Step 2
+if($sent == 'search') {
+$term = $_GET['term'] ?? "";
+echo 'You searched for ' . htmlspecialchars($term);
+ } else {
+ ?>
+ <form action="check-for-http-get.php" method="GET" > 
+ Search for: <input type="search" name="term"> 
+ <input type="submit" value="search" name="sent">
+ </form>
+ 
+<?php include 'includes/footer.php'; ?>
+<?php } ?>
 
 <?php include 'includes/footer.php'; ?>

@@ -22,7 +22,7 @@ class Calculator
     }
     public function division($sum1, $sum2)
     {
-        if ($sum1 || $sum2 == 0) {
+        if ($sum2 == 0) {
             return "ERROR. Cannot divide by 0";
         } else {
             return $sum1 / $sum2;

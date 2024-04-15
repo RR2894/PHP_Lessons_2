@@ -43,3 +43,46 @@ if (!empty($_POST['celsius'])) {
 }
 ?>
 
+<form method="post" action="">
+    <h2>Speed converter</h2>
+    <label for="speed">Enter speed in kilometers per hour:</label>
+    <input type="number" name="speed" id="speed"><br>
+    <input type="submit" name="convertToMetersPerSecond" value="Convert to Meters per Second">
+    <input type="submit" name="convertToKnots" value="Convert to Knots">
+</form>
+
+<?php
+if (!empty($_POST['speed'])) {
+    $speed = $_POST['speed'];
+    if(isset($_POST['convertToMetersPerSecond'])) {
+        echo "$speed kilometers per hour is " . ($speed * 1000 / 3600) . " meters per second";
+    }
+    if(isset($_POST['convertToKnots'])) {
+        echo "$speed kilometers per hour is " . ($speed / 1.852) . " knots";
+    }
+} else {
+    echo "Please input a speed";
+}
+?>
+
+<form method="post" action="">
+    <h2>Mass converter</h2>
+    <label for="mass">Enter mass:</label>
+    <input type="number" name="mass" id="mass"><br>
+    <input type="submit" name="convertToGrams" value="Convert to Grams">
+    <input type="submit" name="convertToKilograms" value="Convert to Kilograms">
+</form>
+
+<?php
+if (!empty($_POST['mass'])) {
+    $mass = $_POST['mass'];
+    if(isset($_POST['convertToGrams'])) {
+        echo "$mass kilograms is " . ($mass * 1000) . " grams";
+    }
+    if(isset($_POST['convertToKilograms'])) {
+        echo "$mass grams is " . ($mass / 1000) . " kilograms";
+    }
+} else {
+    echo "Please input a mass";
+}
+?>

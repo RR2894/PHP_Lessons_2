@@ -1,10 +1,10 @@
-<?php
+<?php include 'db.php';
 
 if(isset($_POST['submit'])) {
     // echo "Data received";
     $user = $_POST['username'];
     $pass = $_POST['password'];
-
+    
     echo $user . " " . $pass;
 }
 

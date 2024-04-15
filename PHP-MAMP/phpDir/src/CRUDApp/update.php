@@ -1,21 +1,5 @@
-<?php
-$host = 'db';
+<?php include 'db.php';
 
-// database user name
-
-$dbname = 'loginapp';
-$dbuser = 'root';
-$dbpass = 'lionPass';
-
-// Check mysql connection status
-
-$conn = new mysqli($host, $dbuser, $dbpass, $dbname);
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} else {
-    echo "Connected to MySQL server successfully";
-}
 $query = "SELECT * FROM users";
 $result = mysqli_query($conn, $query);
 if (!$result) {
@@ -38,6 +22,9 @@ if (isset($_POST['submit'])) {
     $result = mysqli_query($conn, $query);
     if (!$result) {
         die("Update query failed" . mysqli_error($conn));
+    } else {
+        header("Location: " . $_SERVER['PHP_SELF']);
+        exit();
     }
 }
 

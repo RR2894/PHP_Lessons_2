@@ -39,7 +39,7 @@ $min = 8;
 function is_valid ($password, $min){
     $len = strlen($min);
     if($len < $min){
-        return "$message" . "$min";
+        // return "$message" . "$min";
     }
     return TRUE;
 

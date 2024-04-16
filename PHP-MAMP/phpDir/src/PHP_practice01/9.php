@@ -28,10 +28,20 @@
 		Step 3 - Start a session and set it to value, any value you want.
 	*/
 
+// Step 1
+echo '<a href="9.php?param1=value1&param2=value2">Click Here</a>';
+
+// Step 2
+$cookie_name = "cookie";
+$cookie_value = "value";
+$expiry_time = time() + (7 * 24 * 60 * 60);
+setcookie($cookie_name, $cookie_value, $expiry_time, "/");
+
+// Step 3 - Start a session and set it to a value
+session_start();
+$_SESSION['session_value'] = "session_data";
+
 		?>
-
-
-
 
 
   </article>

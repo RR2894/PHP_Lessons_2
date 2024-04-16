@@ -8,7 +8,7 @@
 		<?php Navigation();?>
 			
 			
-		</aside><!--SIDEBAR-->
+		</aside> <!--SIDEBAR-->
 
 
 		
@@ -27,6 +27,11 @@
 
 	*/
 	
+	$text = 'value';
+	$salt = 'fsaflkjfaslkjasf231';
+	$encrypted_password = crypt($text, $salt);
+	echo $encrypted_password;
+
 	?>
 
 

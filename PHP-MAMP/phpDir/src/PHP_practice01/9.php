@@ -29,7 +29,7 @@
 	*/
 
 // Step 1
-echo '<a href="9.php?param1=value1&param2=value2">Click Here</a>';
+echo '<a href="9.php?source=2334353">Click Here</a>';
 
 // Step 2
 $cookie_name = "cookie";
@@ -41,8 +41,9 @@ setcookie($cookie_name, $cookie_value, $expiry_time, "/");
 session_start();
 $_SESSION['session_value'] = "session_data";
 
-		?>
+echo htmlspecialchars($_GET['source'] ?? '');
 
+?>
 
   </article>
   <!--MAIN CONTENT-->

@@ -15,17 +15,17 @@
 
     <?php
 
-		/*  Step 1: Use the Make a class called Dog
+		// Step 1: Use the Make a class called Dog
 
-		Step 2: Set some properties for Dog, Example, eye colors, nose, or fur color
+		// Step 2: Set some properties for Dog, Example, eye colors, nose, or fur color
 
-		Step 4: Make a method named ShowAll that echos all the properties
+		// Step 4: Make a method named ShowAll that echos all the properties
 
-		Step 5: Instantiate the class / create object and call it pitbull
+		// Step 5: Instantiate the class / create object and call it pitbull
 
-    Step 6: Call the method ShowAll
+    // Step 6: Call the method ShowAll
 		
-	*/
+	
 
   class Dog {
       public $name = "Blue";

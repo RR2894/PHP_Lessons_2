@@ -27,12 +27,19 @@
 
 	*/
 	
-	$text = 'value';
-	$salt = 'fsaflkjfaslkjasf231';
-	$encrypted_password = crypt($text, $salt);
-	echo $encrypted_password;
+    // Step 1: Make a variable with some text as a value
+    $text = "This is some text.";
 
-	?>
+    // Step 2: Use crypt() function to encrypt it with a salt
+    $salt = '$2a$07$usesomadasdsadsadsadasdasdsaehtoa';
+	
+    // Step 3: Assign the crypt result to a variable
+    $encrypted_text = crypt($text, $salt);
+	
+    // Step 4: Output the variable
+    echo "Original text: " . $text . "<br>";
+    echo "Encrypted text: " . $encrypted_text;
+    ?>
 
 
 

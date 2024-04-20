@@ -13,12 +13,12 @@ setcookie('counter', $counter);
 
 // Step 4: A new variable should hold message saying the number of pages the visitor has viewed. e.g. "Page views: "
 $message = 'You have visited this site' . $counter . 'times.';
-echo $message;
 
 ?>
 
 <?php include 'includes/header.php'; ?>
 
 <p><a href="sessions.php"> Refresh this page </a> to see the page views increase </p>
+<?= $message; ?>
 
 <?php include 'includes/footer.php'; ?>

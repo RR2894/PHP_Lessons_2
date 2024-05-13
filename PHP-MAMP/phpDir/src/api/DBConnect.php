@@ -5,7 +5,7 @@
 class DBConnect
 {
     private $server = 'db';
-    private $dbname = 'fullstackapp_react24k';
+    private $dbname = 'booksite';
     private $user = 'root';
     private $pass = 'lionPass';
 

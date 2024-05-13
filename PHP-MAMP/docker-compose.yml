@@ -9,6 +9,7 @@ services:
       - db
     volumes:
       - ./phpDir/src:/var/www/html/
+      - /Users/s2400068/Documents/Programming_PHP2/PHP-MAMP/phpDir/src/Booksite-refactored/booksite.php:/var/www/html/booksite.php
     ports:
       - 8005:80
   db:
